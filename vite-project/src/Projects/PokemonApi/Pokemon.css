@@ -1,0 +1,64 @@
+/* Parent container - Grid Layout */
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Space between cards */
+    justify-items: center; /* Center cards within each column */
+    padding: 20px;
+  }
+  
+  /* Alternatively, if you prefer Flexbox */
+  .pokemon-list-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Individual Pokemon Card */
+  .pokemon-card {
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    background-color: #f8f8f8;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pokemon-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pokemon-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .pokemon-id {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .pokemon-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .pokemon-image {
+    width: 100px;
+    height: auto;
+  }
+  .grid-three-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    text-align: center;
+    margin: 3.2rem 0;
+    align-items: end;
+  }
+  
