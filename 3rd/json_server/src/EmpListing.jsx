@@ -13,6 +13,18 @@ const EmpListing = () => {
   }
   const loadDelete = (id) => {
     console.log(id);
+    if(window.confirm("Are you sure you want to delete this record?")){
+      fetch(`http://localhost:3000/employee/${id}`, {
+        method: "DELETE"
+      })
+        .then((res) => {
+          alert("removed Successfully");
+          window.location.reload(f);
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
+    }
   }
   const loadDeatil = (id) => {
     console.log(id);
