@@ -1,0 +1,392 @@
+/* Styling the section */
+.section-post {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  
+}
+
+/* Styling the list */
+.section-post ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 1300px;
+ display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 3.2rem; /* Space between cards */
+  flex-wrap: wrap;
+
+}
+
+/* Styling each card */
+.section-post li {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex-wrap: wrap;
+
+}
+
+.section-post li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling the paragraph */
+.section-post p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Styling the buttons */
+.section-post button {
+  margin-right: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.section-post button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.section-post button:active {
+  transform: scale(0.95);
+  
+}@media (max-width: 768px) {
+  .section-post {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-post {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+}
+
+
+/* form*/
+
+/* Styling the form container */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Styling the form heading */
+form h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Styling the input fields */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Styling the input fields on focus */
+form input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling the submit button */
+form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover effect */
+form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Button active effect */
+form button:active {
+  transform: scale(0.95);
+}
+
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ====== Navbar Styles ====== */
+
+/* Navigation bar base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "urbanist";
+}
+
+p,
+li,
+a,
+button {
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+
+  &:hover {
+    color: #2e86c1;
+    text-decoration: underline;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  height: 10rem;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  background-color: #d4e6f1;
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  max-width: 132rem;
+  margin: auto;
+  height: 10rem;
+}
+
+.grid {
+  display: grid;
+}
+a{
+  text-decoration: none;
+}
+.navbar-grid {
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+  height: 10rem;
+  padding: 0 3.2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: yellow; */
+  gap: 3.2rem;
+}
+
+.ham-menu {
+  display: none;
+}
+
+/* media queries  */
+@media screen and (max-width: 998px) {
+  .menu-web {
+    display: none;
+  }
+
+  .ham-menu {
+    display: inline-block;
+    /* justify-content: flex-end; */
+    text-align: end;
+  }
+
+  .menu-mobile {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px;
+  }
+
+  .menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & li:first-child {
+      margin-top: 1.2rem;
+    }
+
+    & li:last-child {
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+
+
+
+
+
+/* ===== Hero Section ===== */
+
+.hero-section {
+  background-color: #000;
+  padding: 5rem 0;
+}
+
+.banner-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+/* Left Content */
+.banner-inner {
+  flex: 1;
+  max-width: 600px;
+}
+
+.heading-xl {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* CTA Button */
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-darken {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-darken:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn-inline i {
+  font-size: 1.2rem;
+}
+
+/* Right Image */
+.banner-img {
+  flex: 1;
+  max-width: 600px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ===== Responsive Layout ===== */
+@media (max-width: 992px) {
+  .banner-column {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-inner, .banner-img {
+    max-width: 100%;
+  }
+
+  .heading-xl {
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-xl {
+    font-size: 1.8rem;
+  }
+
+  .paragraph {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
